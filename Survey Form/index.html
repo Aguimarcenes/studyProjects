@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>
+      Survey Form
+    </title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body >
+    <div class="container">
+    <h1 id="title">Pesquisa</h1>
+    <p id="description">Formulário para edição</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label" for="name">
+        Nome: <input id="name" name="name" type="text" placeholder="Entre com seu nome." required/>
+      </label>     
+      <label id="email-label" for="email">
+        E-mail: <input name="email" id="email" type="email" placeholder="Entre com seu e-mail." required/>
+      </label> 
+      <label id="number-label" for="number">
+        Idade: (opcional)<input id="number" name="number" type="number" min="13" max="99" placeholder="Idade."/>
+      </fieldset>
+      <fieldset>
+      </label> Algo a ser selecionado:
+      <select id="dropdown" >
+        <option disabled selected value> Selecione algo</option>
+        <option value="op1">Opção 1</option>
+        <option value="op2">Opção 2</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label>Escolha uma opção</label>
+      <label for="Test1"><input id="Test1" type="radio" name="type" class="inline" value="ts1"/>Test1</label>
+      <label for="test2"><input id="test2" type="radio" name="type" class="inline" value="ts2"/>Test2</label>
+      </fieldset>
+      <fieldset>
+      <label>Marque as opções</label>  
+      <label for="1" ><input id="1" value="1" type="checkbox" name="1" class="inline"/>1</label>
+      <label for="2"><input id="2" value="2" type="checkbox" name="2" class="inline"/>2</label>
+      <label for="3"><input id="3" value="3" type="checkbox" name="3" class="inline"/>3</label>
+      <label for="4"><input id="4" value="4" type="checkbox" name="4" class="inline"/>4</label>
+      </fieldset>
+      <fieldset>
+      <label for="bio">Local para se fazer uma descrição:
+        <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Comentários..." value="bio"></textarea>
+      </label>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>    
+    </div>
+  </body>
+</html>
